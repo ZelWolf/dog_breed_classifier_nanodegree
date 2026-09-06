@@ -53,7 +53,7 @@ While running the batch evaluation across all three models, distinct trade-offs 
 
 ### Key Findings
 
-* **The Optimal Model (VGG):** The **VGG** architecture proved to be the most effective model for this application. It successfully filtered out all 10 non-dog images (100% accuracy) and identified general dog images perfectly (100% accuracy). Furthermore, it achieved the highest breed classification accuracy at **93.3%** (with a measured runtime of ~23 seconds).
+* **The Optimal Model (VGG):** The **VGG** architecture proved to be the most effective model for this application. It successfully filtered out all 10 non-dog images (100% accuracy) and identified general dog images perfectly (100% accuracy). Furthermore, it achieved the highest breed classification accuracy at **93.3%** (with a measured runtime of ~2.3 seconds).
 * **Algorithmic Trade-offs:** While AlexNet matched VGG's perfect 100% accuracy in basic dog vs. non-dog verification, it struggled with granular breed identification. Conversely, ResNet performed better than AlexNet at identifying specific breeds but failed to achieve the perfect 100% baseline for basic verification. 
 * **Edge Case Limitations:** The 93.3% breed accuracy in the VGG model highlights a known limitation in computer vision: distinguishing between morphologically similar classes. The model's only errors were misclassifications of closely related breeds, specifically confusing a **Great Pyrenees** for a **Kuvasz**, and a **Beagle** for a **Walker Hound**. Despite these edge cases, the system demonstrated exceptional reliability for the primary goal of the registration system.
 
